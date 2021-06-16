@@ -48,12 +48,6 @@ function plotCreator(id) {
             title: "Top 10 Bacteria Cultures Found",
             yaxis:{
                 tickmode:"linear",
-            },
-            margin: {
-                l: 100,
-                r: 100,
-                t: 30,
-                b: 20
             }
         };
 
@@ -84,7 +78,7 @@ function plotCreator(id) {
 }
     
 function dataImporter(id) {
-    d3.json("samples.json").then((data)=> {
+    d3.json("samples.json").then((data) => {
         var metadata = data.metadata;
         console.log(metadata)
 
@@ -99,8 +93,7 @@ function dataImporter(id) {
     });
 }
 
-
-function newSubject(id) {
+function optionChanged(id) {
     plotCreator(id);
     dataImporter(id);
 }
