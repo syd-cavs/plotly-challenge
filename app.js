@@ -93,7 +93,7 @@ function dataImporter(id) {
     });
 }
 
-function optionChanged(id) {
+function dataSelector(id) {
     plotCreator(id);
     dataImporter(id);
 }
